@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  font-size: 18px; /* Base font size */
 }
 
 header {
@@ -98,16 +99,26 @@ img {
 @media (max-width: 600px) {
   body {
     padding: 10px;
+    font-size: 20px; /* Larger font size for better readability */
+    line-height: 1.75; /* Improved line spacing */
   }
   nav a {
     display: block;
     margin: 10px 0;
+    padding: 10px 0; /* Easier to tap */
+    font-size: 1.1em; /* Slightly larger nav links */
   }
   .container {
     padding: 0 15px;
   }
   main {
-    padding: 15px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.8em; /* Larger headings */
+  }
+  h2 {
+    font-size: 1.5em;
   }
 }
 

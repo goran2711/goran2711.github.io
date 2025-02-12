@@ -1,0 +1,113 @@
+/* Sepia Blog Theme - Easy on the Eyes */
+
+body {
+  background-color: #f4ecd8; /* Light sepia background */
+  color: #4a3b2c; /* Dark brown text for good contrast */
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e0d6bd;
+  color: #3a2c1a;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #5a4632;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #8b6e4f;
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px; /* Slim column for readability */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Prevent content from touching edges */
+}
+
+main {
+  background-color: #faf3e3;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: left; /* Keep content left-aligned */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #3a2c1a;
+  margin-top: 0;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+blockquote {
+  border-left: 4px solid #8b6e4f;
+  padding-left: 15px;
+  color: #5a4632;
+  font-style: italic;
+  background-color: #f1e7d3;
+}
+
+a {
+  color: #8b6e4f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a98460;
+}
+
+footer {
+  background-color: #e0d6bd;
+  color: #3a2c1a;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+code, pre {
+  background-color: #ede3cc;
+  color: #4a3b2c;
+  padding: 5px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  main {
+    padding: 15px;
+  }
+}
+

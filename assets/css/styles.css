@@ -39,6 +39,7 @@ nav a:hover {
 main {
   background-color: #faf3e3;
   padding: 20px;
+  margin: 10px 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: left; /* Keep content left-aligned */

@@ -30,7 +30,6 @@ body {
   gap: 0.75rem;
 }
 
-
 .site-title {
   text-align: left;
   font-family: var(--font-primary);
@@ -95,4 +94,8 @@ h1, h2, h3 {
   display: block;
   font-style: italic;
   font-size: 0.9rem;
+}
+
+.logo-title:hover {
+  text-decoration: none;
 }

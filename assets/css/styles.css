@@ -99,3 +99,26 @@ h1, h2, h3 {
 .logo-title:hover {
   text-decoration: none;
 }
+
+@media (max-width: 600px) {
+  .logo-title {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .site-title .line-one,
+  .site-title .line-two {
+    font-size: 1.25rem;
+  }
+
+  .site-title {
+    text-align: left;
+  }
+}

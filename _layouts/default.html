@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
     <!-- Standard Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png' | relative_url }}">
@@ -16,14 +16,26 @@
     <!-- Apple Touch Icon (for iOS) -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
     
-    <meta name="theme-color" content="#f4ecd8">
+    <meta name="theme-color" content="#f2e9da">
   </head>
-  <body>
-    <div class="container">
-      <main>
-        <!-- {% include navigation.html %} -->
+  <body class="container">
+    <header class="site-header">
+      <div class="logo-title">
+        <img src="/assets/logo.png" alt="Logo" class="logo">
+        <div class="site-title">
+          <div class="line-one">MIND-</div>
+          <div class="line-two">ARCHIPELAGO.COM</div>
+        </div>
+      </div>
+      <nav>
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/about' | relative_url }}">About</a>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
         {{ content }}
-      </main>
-    </div>
+    </main>
   </body>
 </html>

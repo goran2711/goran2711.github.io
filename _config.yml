@@ -1,0 +1,8 @@
+title: MIND-ARCHIPELAGO.COM
+description: "A blog about journaling and self-improvement."
+baseurl: ""
+url: ""
+
+collections:
+  posts:
+    output: true

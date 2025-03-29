@@ -2,17 +2,21 @@
 layout: default
 title: Mind Archipelago
 ---
-# Reflective Capture Journaling
+# My Journaling Method
 
-Journaling doesn’t have to be complicated. Here’s a simple method that makes it easy to capture thoughts throughout the day and turn them into meaningful reflections:  
+For now, the content on this page is very sporadic. At some point I would like
+to go over and polish it all to give a nice overview of my approach to journaling.
 
-## 1. Capture Thoughts in Real Time  
-Using an Apple Shortcut (or a similar quick-capture tool), jot down thoughts, ideas, or events as they happen. Each entry is automatically timestamped and added to a daily note, making it effortless to track things as they unfold.  
+<hr>
 
-## 2. Daily Review and Consolidation  
-At the end of the day, review the note. This step isn’t about overthinking—just read through the entries and consolidate them into a journal entry.  
+## Recent Posts
 
-## 3. Flexible Journaling Style  
-The final journal entry often takes the form of a chronological recap of the day. But there’s room to explore tangents—reflecting on reactions, analyzing interactions, or unpacking ideas that stood out.  
-
-This approach keeps journaling consistent without feeling like a chore. It’s structured enough to stay organized but flexible enough to capture spontaneous thoughts and deeper reflections.
+<ul class="posts">
+  {% for post in site.posts %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="post-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>

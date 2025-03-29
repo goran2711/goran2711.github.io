@@ -15,4 +15,4 @@ At the end of the day, review the note. This step isn’t about overthinking—j
 ## 3. Flexible Journaling Style  
 The final journal entry often takes the form of a chronological recap of the day. But there’s room to explore tangents—reflecting on reactions, analyzing interactions, or unpacking ideas that stood out.  
 
-This approach keeps journaling consistent without feeling like a chore. It’s structured enough to stay organized but flexible enough to capture spontaneous thoughts and deeper reflections.  
+This approach keeps journaling consistent without feeling like a chore. It’s structured enough to stay organized but flexible enough to capture spontaneous thoughts and deeper reflections.

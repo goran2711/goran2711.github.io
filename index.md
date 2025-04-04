@@ -2,14 +2,7 @@
 layout: default
 title: Mind Archipelago
 ---
-# My Journaling Method
-
-For now, the content on this page is very sporadic. At some point I would like
-to go over and polish it all to give a nice overview of my approach to journaling.
-
-<hr>
-
-## Recent Posts
+# Recent Posts
 
 <ul class="posts">
   {% for post in site.posts %}

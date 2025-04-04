@@ -2,7 +2,7 @@
   --background-colour: #f2e9da;
   --text-colour: #60553F;
   --font-primary: 'Georgia', serif;
-  --accent-colour: #60553F;
+  --accent-colour: #7A6A4B;
 }
 
 body {
@@ -16,8 +16,7 @@ body {
 .container {
   max-width: 570px; /* Tweak as needed for your ideal line length */
   margin: 0 auto;
-  padding: 0 1rem;
-  padding-bottom: 4rem;
+  padding: 0 1rem 4rem;
 }
 
 .site-header {
@@ -27,45 +26,56 @@ body {
 
 .logo-title {
   display: flex;
+  text-decoration: none;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 1rem;
+}
+
+.logo-title:hover {
+  text-decoration: none;
+}
+
+.logo-title,
+.logo-title:hover {
+  color: var(--text-colour);
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .site-title {
+  font-style: normal;
   text-align: left;
-  font-family: var(--font-primary);
-  color: var(--text-colour);
   line-height: 1.1;
 }
 
-.site-title .line-one {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
+.site-title .line-one,
 .site-title .line-two {
   font-size: 2.5rem;
   font-weight: bold;
 }
 
 .logo {
-  height: 7rem;
-  width: 7rem;
+  inline-size: 7rem;
+  block-size: 7rem;
 }
 
 a {
   color: var(--text-colour);
   text-decoration: none;
+  font-style: italic;
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--accent-colour);
 }
 
 nav a {
-  text-decoration: none;
   color: inherit;
   margin: 0 1rem;
 }
@@ -77,7 +87,7 @@ hr {
 }
 
 h1, h2, h3 {
-  color: var(---text-colour);
+  color: var(--text-colour);
 }
 
 .posts {
@@ -99,16 +109,6 @@ h1, h2, h3 {
   display: block;
 }
 
-.logo-title:hover {
-  text-decoration: none;
-}
-
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 @media (max-width: 600px) {
   .logo-title {
     flex-direction: row;
@@ -118,17 +118,13 @@ h1, h2, h3 {
   }
 
   .logo {
-    height: 5rem;
-    width: 5rem;
+    inline-size: 5rem;
+    block-size: 5rem;
   }
 
   .site-title .line-one,
   .site-title .line-two {
     font-size: 1.25rem;
-  }
-
-  .site-title {
-    text-align: left;
   }
 }
 

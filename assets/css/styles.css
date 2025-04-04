@@ -17,10 +17,12 @@ body {
   max-width: 570px; /* Tweak as needed for your ideal line length */
   margin: 0 auto;
   padding: 0 1rem;
+  padding-bottom: 4rem;
 }
 
 .site-header {
   text-align: center;
+  margin-top: 1rem;
 }
 
 .logo-title {
@@ -87,17 +89,24 @@ h1, h2, h3 {
   margin-bottom: 0.2rem;
 }
 
-.posts li .post-date {
+.post-date {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
   color: var(--accent-colour);
-  margin-top: 0;
-  margin-bottom: 0.75rem;
+  margin-top: -0.25rem;
+  margin-bottom: 1.25rem;
   display: block;
-  font-style: italic;
-  font-size: 0.9rem;
 }
 
 .logo-title:hover {
   text-decoration: none;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -120,5 +129,30 @@ h1, h2, h3 {
 
   .site-title {
     text-align: left;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-colour: #1e1e1e;
+    --text-colour: #e0dccc;
+    --accent-colour: #d1c7a5;
+  }
+
+  body {
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+  }
+
+  hr {
+    border-top-color: var(--text-colour);
+  }
+
+  a {
+    color: var(--text-colour);
+  }
+
+  .post-date {
+    color: var(--accent-colour);
   }
 }

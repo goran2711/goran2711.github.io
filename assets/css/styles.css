@@ -128,6 +128,32 @@ h1, h2, h3 {
   }
 }
 
+@media (max-width: 375px) {
+  .logo-title {
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    inline-size: 5rem;
+    block-size: 5rem;
+  }
+
+  .logo-wrap {
+    margin-bottom: 1rem;
+  }
+
+  .site-title {
+    display: none;
+  }
+
+  .container {
+    padding: 0 0.75rem 4rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-colour: #1e1e1e;

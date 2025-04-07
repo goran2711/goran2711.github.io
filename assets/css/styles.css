@@ -24,12 +24,20 @@ body {
   margin-top: 1rem;
 }
 
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .logo-title {
   display: flex;
   text-decoration: none;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  width: auto;
 }
 
 .logo-title:hover {
@@ -39,11 +47,6 @@ body {
 .logo-title,
 .logo-title:hover {
   color: var(--text-colour);
-}
-
-.logo-wrap {
-  display: flex;
-  align-items: center;
 }
 
 .site-title {
@@ -115,6 +118,7 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    width: auto;
   }
 
   .logo {

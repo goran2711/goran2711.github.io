@@ -40,5 +40,12 @@
     <main>
         {{ content }}
     </main>
+
+    <footer class="site-footer">
+      <hr>
+      <div class="footer-meta">
+        Last updated: {{ site.time | date: "%B %Y" }}
+      </div>
+    </footer>
   </body>
 </html>

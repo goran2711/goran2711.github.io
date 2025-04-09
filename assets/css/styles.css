@@ -3,6 +3,7 @@
   --text-colour: #60553F;
   --font-primary: 'Georgia', serif;
   --accent-colour: #7A6A4B;
+  line-height: 1.6;
 }
 
 body {
@@ -11,17 +12,22 @@ body {
   color: var(--text-colour);
   padding: 2rem;
   line-height: 1.6;
+  text-align: left;
+  hyphens: auto;
+  text-rendering: optimizeLegibility;
 }
 
 .container {
   max-width: 570px; /* Tweak as needed for your ideal line length */
   margin: 0 auto;
-  padding: 0 1rem 4rem;
+  padding: 0 1rem 4lh;
+  margin-trim: block;
 }
 
 .site-header {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1lh;
+  margin-bottom: 1lh;
 }
 
 .logo-wrap {
@@ -85,8 +91,8 @@ nav a {
 
 hr {
   border: none;
-  border-top: 2px solid var(--text-colour);
-  margin: 1.5rem 0;
+  border-top: 1px solid var(--text-colour);
+  margin: 1lh 0;
 }
 
 h1, h2, h3 {
@@ -96,10 +102,11 @@ h1, h2, h3 {
 .posts {
   list-style: none;
   padding: 0;
+  margin-trim: block;
 }
 
 .posts li h3 {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.2lh;
 }
 
 .post-date {
@@ -107,9 +114,28 @@ h1, h2, h3 {
   letter-spacing: 0.05em;
   font-size: 0.85rem;
   color: var(--accent-colour);
-  margin-top: -0.25rem;
-  margin-bottom: 1.25rem;
+  margin-top: -0.25lh;
+  margin-bottom: 1.25lh;
   display: block;
+}
+
+/* Fallback for browsers that don't support margin-trim */
+@supports not (margin-trim: block) {
+  .container > :first-child {
+    margin-block-start: 0;
+  }
+  
+  .container > :last-child {
+    margin-block-end: 0;
+  }
+  
+  .posts > :first-child {
+    margin-block-start: 0;
+  }
+  
+  .posts > :last-child {
+    margin-block-end: 0;
+  }
 }
 
 @media (max-width: 600px) {
@@ -135,7 +161,7 @@ h1, h2, h3 {
 @media (max-width: 375px) {
   .logo-title {
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.25lh;
     align-items: center;
     width: 100%;
   }
@@ -154,7 +180,7 @@ h1, h2, h3 {
   }
 
   .container {
-    padding: 0 0.75rem 4rem;
+    padding: 0 0.75rem 4lh;
   }
 }
 
@@ -181,4 +207,20 @@ h1, h2, h3 {
   .post-date {
     color: var(--accent-colour);
   }
+}
+
+.site-footer {
+  margin-top: 1lh;
+  padding-top: 0.5lh;
+  font-size: 0.9rem;
+}
+
+.footer-meta {
+  color: var(--accent-colour);
+  text-align: left;
+}
+
+p {
+  margin-block: 1lh;
+  max-width: 65ch;
 }

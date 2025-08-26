@@ -1,9 +1,9 @@
 :root {
-  --background-colour: #f2e9da;
-  --text-colour: #60553F;
-  --font-primary: 'Georgia', serif;
-  --accent-colour: #7A6A4B;
-  line-height: 1.6;
+  --background-colour: #fefefe;
+  --text-colour: #333;
+  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --accent-colour: #666;
+  line-height: 1.8;
 }
 
 body {
@@ -11,72 +11,45 @@ body {
   background-color: var(--background-colour);
   color: var(--text-colour);
   padding: 2rem;
-  line-height: 1.6;
+  line-height: 1.8;
   text-align: left;
-  hyphens: auto;
+  font-size: 0.9rem;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
 }
 
 .container {
-  max-width: 570px; /* Tweak as needed for your ideal line length */
+  max-width: 570px;
   margin: 0 auto;
-  padding: 2rem 1rem 4lh;
-  margin-trim: block;
+  padding: 2rem 1rem 4rem;
 }
 
 .site-header {
   text-align: center;
-  margin-top: 1lh;
-  margin-bottom: 1lh;
-}
-
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.logo-title {
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  width: auto;
-}
-
-.logo-title:hover {
-  text-decoration: none;
-}
-
-.logo-title,
-.logo-title:hover {
-  color: var(--text-colour);
+  margin-bottom: 3rem;
 }
 
 .site-title {
-  font-style: normal;
-  text-align: left;
-  line-height: 1.1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--text-colour);
 }
 
-.site-title .line-one,
-.site-title .line-two {
-  font-size: 2.5rem;
-  font-weight: bold;
+.site-title:hover {
+  text-decoration: none;
+  color: var(--accent-colour);
 }
 
-.logo {
-  inline-size: 7rem;
-  block-size: 7rem;
+h1 {
+  margin: 0 0 1rem 0;
 }
 
 a {
   color: var(--text-colour);
   text-decoration: none;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 a:hover {
@@ -88,36 +61,26 @@ nav a {
   color: inherit;
   margin: 0 1rem;
   font-style: normal;
+  font-weight: 400;
 }
 
-hr {
-  border: none;
-  border-top: 1px solid var(--text-colour);
-  margin: 1lh 0;
-}
 
 h1, h2, h3 {
   color: var(--text-colour);
+  margin-top: 2rem;
+}
+
+.site-footer {
+  margin-top: 3rem;
+  font-size: 0.75rem;
+  color: var(--accent-colour);
+  text-align: center;
 }
 
 .posts {
   list-style: none;
   padding: 0;
-  margin-trim: block;
-}
-
-.posts li h3 {
-  margin-bottom: 0.2lh;
-}
-
-.post-date {
-  font-variant: small-caps;
-  letter-spacing: 0.05em;
-  font-size: 0.85rem;
-  color: var(--accent-colour);
-  margin-top: -0.25lh;
-  margin-bottom: 1.25lh;
-  display: block;
+  line-height: 2;
 }
 
 /* Fallback for browsers that don't support margin-trim */
@@ -140,88 +103,33 @@ h1, h2, h3 {
 }
 
 @media (max-width: 600px) {
-  .logo-title {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    width: auto;
+  body {
+    padding: 1rem;
+    font-size: 0.85rem;
   }
-
-  .logo {
-    inline-size: 5rem;
-    block-size: 5rem;
-  }
-
-  .site-title .line-one,
-  .site-title .line-two {
+  
+  .site-title {
     font-size: 1.25rem;
   }
 }
 
-@media (max-width: 375px) {
-  .logo-title {
-    flex-direction: column;
-    gap: 0.25lh;
-    align-items: center;
-    width: 100%;
-  }
 
-  .logo {
-    inline-size: 5rem;
-    block-size: 5rem;
-  }
 
-  .logo-wrap {
-    margin-bottom: 1rem;
-  }
+p {
+  margin-bottom: 1.5rem;
+}
 
-  .site-title {
-    display: none;
-  }
 
-  .container {
-    padding: 0 0.75rem 4lh;
-  }
+a:focus,
+button:focus {
+  outline: 2px solid var(--accent-colour);
+  outline-offset: 2px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-colour: #1e1e1e;
-    --text-colour: #e0dccc;
-    --accent-colour: #d1c7a5;
+    --background-colour: #1a1a1a;
+    --text-colour: #e5e5e5;
+    --accent-colour: #999;
   }
-
-  body {
-    background-color: var(--background-colour);
-    color: var(--text-colour);
-  }
-
-  hr {
-    border-top-color: var(--text-colour);
-  }
-
-  a {
-    color: var(--text-colour);
-  }
-
-  .post-date {
-    color: var(--accent-colour);
-  }
-}
-
-.site-footer {
-  margin-top: 1lh;
-  padding-top: 0.5lh;
-  font-size: 0.9rem;
-}
-
-.footer-meta {
-  color: var(--accent-colour);
-  text-align: left;
-}
-
-p {
-  margin-block: 1lh;
-  max-width: 65ch;
 }

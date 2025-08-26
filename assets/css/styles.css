@@ -20,7 +20,7 @@ body {
 .container {
   max-width: 570px; /* Tweak as needed for your ideal line length */
   margin: 0 auto;
-  padding: 0 1rem 4lh;
+  padding: 2rem 1rem 4lh;
   margin-trim: block;
 }
 
@@ -87,6 +87,7 @@ a:hover {
 nav a {
   color: inherit;
   margin: 0 1rem;
+  font-style: normal;
 }
 
 hr {
